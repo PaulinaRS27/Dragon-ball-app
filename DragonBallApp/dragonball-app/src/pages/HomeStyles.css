@@ -1,0 +1,65 @@
+/* Contenedor principal de todos los personajes */
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Cada tarjeta individual */
+.character-card {
+  width: 220px;             /* 🔹 Más ancho */
+  height: 280px;            /* 🔹 Más alto */
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+/* Efecto hover */
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen dentro de la tarjeta */
+.character-card img {
+  width: 130px;             /* 🔹 Tamaño más pequeño de imagen */
+  height: 160px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Nombre del personaje */
+.character-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Mensaje cuando no hay personajes */
+.no-characters {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+
+/* 🔸 Título principal */
+.main-title {
+  text-align: center;           /* Centra el título */
+  color: #ff6600;               /* Naranja tipo Dragon Ball */
+  font-size: 40px;              /* Un poco más grande */
+  margin-top: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+  font-family: 'Trebuchet MS', sans-serif;
+}
